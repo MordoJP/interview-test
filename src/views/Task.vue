@@ -36,7 +36,6 @@
 export default {
   computed: {
     task() {
-      console.log(this.$route.params.id)
       return this.$store.getters.taskById(+this.$route.params.id)
     }
   },
